@@ -5,8 +5,6 @@
   "description": "Share the HTML Claude makes on aihops, follow its review, read everyone's mark-up and make the next version, all from Claude, as you.",
   "author": { "name": "aihops", "email": "support@aihops.com.au", "url": "https://aihops.com.au" },
   "homepage": "https://aihops.com.au/claude",
-  "privacyPolicyUrl": "https://aihops.com.au/privacy/",
   "license": "LicenseRef-aihops",
-  "icon": "./.claude-plugin/icon.png",
   "keywords": ["aihops", "review", "html", "share", "comments", "documents"]
 }
