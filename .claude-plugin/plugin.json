@@ -1,0 +1,10 @@
+{
+  "name": "aihops",
+  "displayName": "aihops",
+  "version": "1.0.1",
+  "description": "Share the HTML Claude makes on aihops, follow its review, read everyone's mark-up and make the next version, all from Claude, as you.",
+  "author": { "name": "aihops", "email": "support@aihops.com.au", "url": "https://aihops.com.au" },
+  "homepage": "https://aihops.com.au/claude",
+  "license": "LicenseRef-aihops",
+  "keywords": ["aihops", "review", "html", "share", "comments", "documents"]
+}
