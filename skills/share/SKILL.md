@@ -1,6 +1,6 @@
 ---
 name: share
-description: Put an HTML document on aihops and share it for review. Use when the person wants to share, send, publish or get feedback on a page, report, one-pager or deck Claude made (or one they have), or says "put it on aihops" or "hop it over".
+description: Put an HTML document, or a page, PDF or Word document from a link, on aihops and share it for review. Use when the person wants to share, send, publish or get feedback on a page, report, one-pager or deck Claude made (or one they have, or one at a web address), or says "put it on aihops" or "hop it over".
 ---
 
 # Share a document on aihops
@@ -16,7 +16,13 @@ aihops shows one self-contained HTML file in a sandbox, so:
   what a browser can fetch on its own (web fonts from Google Fonts or a CDN are fine; the person's own files aren't).
 - **A real `<title>`.** It becomes the document's name on aihops. Ask if it isn't obvious.
 - **Text people can quote.** Mark-up pins to words, so headings and paragraphs should be real text, not pictures of text.
-- **Up to 5 MB here.** Larger documents, PDFs and Word documents are uploaded in the browser at https://app.aihops.com.au.
+- **Up to 5 MB here.** Larger documents, PDFs and Word documents are uploaded in the browser at https://app.aihops.com.au,
+  unless they're on the public web: then give aihops the link.
+
+A document already on the public web (an https web page, PDF or Word document anyone can open) needs none of this: give
+`upload_document` its `url` and aihops reads it once, as the site sends it. A link to a Claude artifact, a ChatGPT canvas
+or a Gemini page can't be read that way, as those apps show them only to people signed in: send the artefact's own HTML
+instead.
 
 ## 2. Choose how it's used
 
@@ -31,7 +37,7 @@ Also ask whether the people it's shared with may make their own copy (`copies`, 
 
 ## 3. Upload
 
-Call `upload_document` with the HTML, the mode and the title. Give the person the link it returns. Nobody else can see it
+Call `upload_document` with the HTML (or the `url`), the mode and the title. Give the person the link it returns. Nobody else can see it
 yet.
 
 ## 4. Share, after asking
